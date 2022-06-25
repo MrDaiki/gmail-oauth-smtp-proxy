@@ -3,10 +3,12 @@ services:
   mailer:
     build:
       context: .
-
       args:
         port: 25
         sender_mails: 
         subject : 
         service_account_file : 
-        
+    ports:
+      - "25:25"
+    expose:
+      - "25"
