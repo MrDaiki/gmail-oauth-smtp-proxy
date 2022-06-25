@@ -1,0 +1,12 @@
+version: '3.8'
+services: 
+  mailer:
+    build:
+      context: .
+
+      args:
+        port: 25
+        sender_mails: 
+        subject : 
+        service_account_file : 
+        
